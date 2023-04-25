@@ -3,11 +3,16 @@ var txtInput = document.querySelector("#txt-input-one");
 var outputDiv = document.querySelector("#output-one");
 
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+
+
+var serverURL = "https://api.funtranslations.com/translate/minion.json" ;
+
 
 function getTranslationURL(text) {
    return `${serverURL}?text=${text}` 
 }
+
+
 
 function errorHandler(error) {
    console.log("error occured", error);
@@ -30,5 +35,8 @@ function clickEventHandler(){
     .catch(errorHandler)
 
 };
+
+
+
 
 btnTranslate.addEventListener("click" ,  clickEventHandler) ;
