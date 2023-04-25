@@ -4,6 +4,12 @@ let outputDiv = document.querySelector("#output");
 
 var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
 
+function errorHandler(error) {
+   console.log("error occured", error);
+   alert("something wrong with server! try again after some time");
+   
+}
+
 function getTranslationURL(text) {
    return serverURL + "text=" + text 
 }
@@ -16,6 +22,7 @@ function clickEventHandler(){
    fetch(getTranslationURL(inputText))
     .then(Response => Response.json())
     .then(json => console.log(json.console.transalted))
+    .catch(errorHandler)
 
 };
 
