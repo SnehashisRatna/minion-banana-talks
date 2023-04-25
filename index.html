@@ -11,43 +11,37 @@
 
   
 </head>
-<body class="xl:max-w-screen-2xl  xl:mx-auto ">
+<body class="xl:max-w-screen-2xl xl:relative xl:mx-auto ">
 <!-- bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-cyan-500 -->
-    <nav class="h-20 p-3 text-center font-bold text-5xl bg-amber-300  ">Fun Translator🫠</nav>
+    <nav class="xl:h-20 xl:p-3 xl:text-center xl:font-bold xl:text-5xl xl:bg-amber-300  ">Bannanaaa Talk🫠</nav>
 
 
-    <main class="flex justify-around h-[100vh] bg-slate-100">
+    <main class=" xl:flex xl:justify-around   xl:h-[100vh] xl:bg-slate-100">
          <!-- Minion Language -->
-        <div class="text-center" >
+        <div class="xl:text-center" >
 
-            <h1 class="text-4xl font-semibold underline decoration-amber-200 " >Bannanaaa Talk</h1>
-            <textarea class="border-2 " name="textarea" id="txt-input-one" cols="30" rows="10"></textarea>
+           
+            <textarea class="xl:border-2 " placeholder="Write! What you want to convert" name="textarea" id="txt-input-one" cols="30" rows="10"></textarea>
 
-            <h2 class="inline-block font-mono font-semibold">Translate into minion language 👇 </h2>
-            <button class=" p-3 rounded-2xl text-white font-semibold transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" id="btn-translate-one">Translate</button>
+            <h2 class="xl:inline-block xl:font-mono xl:font-semibold">Translate into minion language 👇 </h2>
+            <button class=" xl:p-3 xl:rounded-lg xl:text-white xl:font-semibold xl:transition xl:ase-in-out xl:delay-150 xl:bg-blue-500 xl:hover:-translate-y-1 xl:hover:scale-110 xl:hover:bg-amber-400 xl:duration-300 " id="btn-translate-one">Translate</button>
 
-            <div id="output-one"></div>
-            <img class="h-96 translate-x-44 -translate-y-14" src="./images/Daco_73248.png" alt="">
+            <div id="output-one" ></div>
+            <img class="xl:h-32 xl:w-96  xl:translate-y-40" src="./images/Daco_4074642.png" alt="">
         </div>
-
-        <!-- Groot Language -->
-        <div class="text-center" >
-
-            <h1 class="text-4xl font-semibold underline decoration-amber-200" >Groot Talk</h1>
-            <textarea class="border-2" name="textarea" id="txt-input-two" cols="30" rows="10"></textarea>
-
-            <h2 class="inline-block font-mono font-semibold">Translate into Groot language 👇 </h2>
-            <button class=" p-3 rounded-2xl text-white font-semibold transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" id="btn-translate-two">Translate</button>
-
-
-            
-            <div id="output-two"></div>
-            <img class="h-96 -translate-y-10" src="./images/Baby-Groot-PNG-HD-Image.png" alt="">
-        </div>
+         <div>
+            <img class="xl:h-96 xl:translate-x-14" src="./images/Daco_5528685.png" alt="">
+            <img class="xl:w-96  xl:translate-y-32 " src="./images/Happy-Minions-PNG-HD-Quality.png" alt="" srcset="">
+         </div>
 
     </main>
+    <footer class=" xl:absolute bottom-0 xl:h-28 xl:p-3 xl:text-center   xl:font-bold xl:text-xl xl:bg-amber-300  ">
+        <p>About</p>
+        <p class="xl:px-56 xl:font-normal">Minions (/ˈmɪnjənz/) are an all-male species of fictional yellow creatures that appear in Illumination's Despicable Me franchise. They are characterized by their childlike behavior and their language, which is largely unintelligible.</p>
+    </footer>
 
     <script src="./app.js"></script>
-    <script src="./app2.js"></script>
+    
+    
 </body>
 </html>
