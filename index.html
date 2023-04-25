@@ -11,14 +11,43 @@
 
   
 </head>
-<body >
-    <h1 class="">Bannanaaa Talk</h1>
-    <textarea name="textarea" id="txt-input" cols="30" rows="10"></textarea>
-    <button id="btn-translate">Translate</button>
-     
-    <h2>Output will Shown here 👇</h2>
-    <div id="output"></div>
+<body class="xl:max-w-screen-2xl  xl:mx-auto ">
+<!-- bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-cyan-500 -->
+    <nav class="h-20 p-3 text-center font-bold text-5xl bg-amber-300  ">Fun Translator🫠</nav>
+
+
+    <main class="flex justify-around h-[100vh] bg-slate-100">
+         <!-- Minion Language -->
+        <div class="text-center" >
+
+            <h1 class="text-4xl font-semibold underline decoration-amber-200 " >Bannanaaa Talk</h1>
+            <textarea class="border-2 " name="textarea" id="txt-input-one" cols="30" rows="10"></textarea>
+
+            <h2 class="inline-block font-mono font-semibold">Translate into minion language 👇 </h2>
+            <button class=" p-3 rounded-2xl text-white font-semibold transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" id="btn-translate-one">Translate</button>
+
+            <div id="output-one"></div>
+            <img class="h-96 translate-x-44 -translate-y-14" src="./images/Daco_73248.png" alt="">
+        </div>
+
+        <!-- Groot Language -->
+        <div class="text-center" >
+
+            <h1 class="text-4xl font-semibold underline decoration-amber-200" >Groot Talk</h1>
+            <textarea class="border-2" name="textarea" id="txt-input-two" cols="30" rows="10"></textarea>
+
+            <h2 class="inline-block font-mono font-semibold">Translate into Groot language 👇 </h2>
+            <button class=" p-3 rounded-2xl text-white font-semibold transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" id="btn-translate-two">Translate</button>
+
+
+            
+            <div id="output-two"></div>
+            <img class="h-96 -translate-y-10" src="./images/Baby-Groot-PNG-HD-Image.png" alt="">
+        </div>
+
+    </main>
 
     <script src="./app.js"></script>
+    <script src="./app2.js"></script>
 </body>
 </html>
